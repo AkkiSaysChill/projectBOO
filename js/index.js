@@ -53,4 +53,32 @@ document.addEventListener('DOMContentLoaded', function () {
     window.redirectToGitHub = function () {
         window.location.href = "https://github.com";
     };
+
+    // Define your news data (replace with your actual news content)
+    const newsData = [
+        { id: 1, title: 'Exciting News 1', content: 'Details about exciting news 1.' },
+        { id: 2, title: 'Latest Update', content: 'Details about the latest game update.' },
+        { id: 3, title: 'Upcoming Events', content: 'Details about upcoming in-game events.' },
+        // Add more news items as needed
+    ];
+
+    // Create news grid dynamically
+    const newsGrid = document.getElementById('newsGrid');
+    newsData.forEach(news => {
+        const newsItem = document.createElement('div');
+        newsItem.classList.add('news-item');
+        newsItem.textContent = news.title;
+        newsItem.addEventListener('click', () => showNewsDetails(news));
+        newsGrid.appendChild(newsItem);
+    });
+
+    // Function to display news details
+    function showNewsDetails(news) {
+        const newsDetailsContainer = document.getElementById('newsDetails');
+        newsDetailsContainer.innerHTML = `
+            <h2>${news.title}</h2>
+            <p>${news.content}</p>
+        `;
+        newsDetailsContainer.style.display = 'block';
+    }
 });
