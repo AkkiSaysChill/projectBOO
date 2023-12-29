@@ -110,16 +110,17 @@ li {
 
 .bhoot-image {
     position: fixed;
-    top: 50%; /* Center vertically */
-    left: -100px; /* Initial position outside the viewport on the left */
+    top: 50%;
+    left: -100px;
     width: 100px;
     height: 100px;
     animation: moveBhoot 5s linear infinite;
-    opacity: 0; /* Initially hide the image */
+    opacity: 0;
 }
 
 @keyframes moveBhoot {
     to {
-        left: 100%; /* Move to the right edge of the viewport */
+        left: 100%;
     }
 }
+

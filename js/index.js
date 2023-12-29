@@ -24,6 +24,12 @@ document.addEventListener('DOMContentLoaded', function () {
         newsContent.style.display = 'block';
     };
 
+    // Function to start Bhoot animation
+    window.startBhootAnimation = function () {
+        var bhootImage = document.getElementById('bhootImage');
+        bhootImage.classList.add('visible');
+    };
+
     // Function to reset content to its normal state
     function resetContent() {
         const aboutUsContent = document.getElementById('aboutUsContent');
