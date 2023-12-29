@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    font-family: 'Arial', sans-serif;
+    font-family: 'Nosifer', cursive;
+    color: #fff;
+    cursor: url('../bhoot.png'), auto;
+    overflow: hidden;
+}
+
+.horror-home {
+    background-color: #1a1a1a;
+    color: #ff6600; /* Orange color for a spooky effect */
+    text-align: center;
+    padding: 100px;
+    font-family: 'Creepster', cursive; /* Use the horror font */
+}
+
+.horror-home h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.horror-home p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.horror-home button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #ff6600;
+    color: #1a1a1a;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.horror-home button:hover {
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+.navBar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.navBar li:hover {
+    color: #ff6600;
+}
+
+.main-content {
+    /* Styles for your main content */
+    padding: 20px;
+}
+
+.about-us-content {
+    display: none;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.about-us-content h2 {
+    color: #ff6600;
+}
+
+/* Add a sliding animation class */
+.slide-in {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.download-content {
+    display: none;
+}
+
+.news-content{
+    display: none;
+}
+
+
+.bhoot-image {
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: -100px; /* Initial position outside the viewport on the left */
+    width: 100px;
+    height: 100px;
+    animation: moveBhoot 5s linear infinite;
+    opacity: 0; /* Initially hide the image */
+}
+
+@keyframes moveBhoot {
+    to {
+        left: 100%; /* Move to the right edge of the viewport */
+    }
+}

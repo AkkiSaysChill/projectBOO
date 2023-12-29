@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horror Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Nosifer&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="bhoot-image">
+        <img src="bhoot.png" alt="Bhoot Image">
+    </div>
+-->
+<button onclick="startBhootAnimation()">Start Bhoot Animation</button>
+
+    <div class="navBar">
+        <ul>
+            <li onclick="showHome()">Home</li>
+            <li onclick="showAboutUs()">About Us</li>
+            <li onclick="redirectToGitHub()">GitHub</li>
+            <li onclick="showDownload()">Download</li>
+            <li onclick="showNews()">News</li>
+        </ul>
+    </div>
+
+    <div class="horror-home" id="horrorHome">
+        <h1>Welcome to the Horror Game</h1>
+        <p>Are you brave enough to face the unknown?</p>
+        <button onclick="showDownload()">Explore Now</button>
+    </div>
+
+    <div class="download-content" id="downloadContent">
+        <h2>Download Page</h2>
+        <p>This is the download-related content. Add information about your game download here.</p>
+    </div>
+
+    <div class="news-content" id="newsContent">
+        <h2>Latest News</h2>
+        <p>Stay tuned for the latest updates and news about our horror game.</p>
+    </div>
+
+    <div class="about-us-content" id="aboutUsContent">
+        <h2>About Us</h2>
+        <p>
+            Welcome! This is the official website for _______ by Press-X.
+            Currently, our total focus is on this game, and any future projects
+            will be announced here in the News tab.
+        </p>
+    </div>
+
+    <script>
+        // JavaScript to add a class after the page has loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            var bhootImage = document.getElementById('bhootImage');
+            bhootImage.classList.add('visible');
+        });
+    </script>
+</body>
+</html>
